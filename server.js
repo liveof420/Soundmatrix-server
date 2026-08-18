@@ -54,7 +54,7 @@ const server = http.createServer((req, res) => {
       const payload = JSON.stringify({
         model: MODEL,
         max_tokens: 1000,
-        system: `Eres un experto en música. Recibirás un link de playlist de cualquier servicio de streaming. Identifica las canciones que aparecen en la playlist y buscalas en la base de datos. Comparalas con las más probables basándote en el identificador del link, el servicio, y el género/mood explícito e implícito. Responde ÚNICAMENTE con JSON válido sin markdown ni texto extra: {"songs":[{"name":"nombre exacto","artist":"artista"}],"service":"servicio","playlist_name":"nombre si se conoce"}. Devuelve entre 8 y 15 canciones con nombres exactos como aparecen en las plataformas.`,
+        system: `Eres un experto en música. Recibirás un link de playlist de cualquier servicio de streaming. Identifica las canciones que aparecen en la playlist y buscalas en la base de datos. Si no hay concidencias proyecta el mensaje de "Canciones no encontradas, buscando silmilares". Comparalas con las más probables basándote en el identificador del link, el servicio, y el género/mood explícito e implícito. Responde ÚNICAMENTE con JSON válido sin markdown ni texto extra: {"songs":[{"name":"nombre exacto","artist":"artista"}],"service":"servicio","playlist_name":"nombre si se conoce"}. Devuelve entre 8 y 15 canciones con nombres exactos como aparecen en las plataformas.`,
         messages: [{ role: 'user', content: 'Extrae las canciones de esta playlist: ' + playlistLink }]
       });
 
