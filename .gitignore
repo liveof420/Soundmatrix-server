@@ -1,0 +1,14 @@
+# Dependencias (el proyecto no usa npm install, pero por si acaso)
+node_modules/
+
+# Config personal del editor
+.vscode/
+
+# Specs internas de Kiro (no se publican)
+.kiro/
+
+# Logs y temporales
+*.log
+_*.js
+*.bak
+.DS_Store

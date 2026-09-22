@@ -1,0 +1,42 @@
+{
+  "id": 1234567,
+  "title": "Verano 2024",
+  "description": "",
+  "duration": 1123,
+  "public": true,
+  "nb_tracks": 4,
+  "creator": { "id": 42, "name": "soundmatrix" },
+  "tracks": {
+    "data": [
+      {
+        "id": 3135556,
+        "title": "Harder, Better, Faster, Stronger",
+        "duration": 224,
+        "artist": { "id": 27, "name": "Daft Punk" },
+        "album": { "id": 302127, "title": "Discovery" }
+      },
+      {
+        "id": 916424,
+        "title": "One More Time",
+        "duration": 320,
+        "artist": { "id": 27, "name": "Daft Punk" },
+        "album": { "id": 302127, "title": "Discovery" }
+      },
+      {
+        "id": 67238732,
+        "title": "Bad Guy",
+        "duration": 194,
+        "artist": { "id": 9635624, "name": "Billie Eilish" },
+        "album": { "id": 9827160, "title": "WHEN WE ALL FALL ASLEEP" }
+      },
+      {
+        "id": 142986964,
+        "title": "Don't Start Now",
+        "duration": 183,
+        "artist": { "id": 1562681, "name": "Dua Lipa" },
+        "album": { "id": 122261932, "title": "Future Nostalgia" }
+      }
+    ],
+    "checksum": "abc123"
+  }
+}
