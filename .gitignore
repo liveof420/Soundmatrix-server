@@ -1,0 +1,11 @@
+# Dependencias (el proyecto no usa npm install, pero por si acaso)
+node_modules/
+
+# Config personal del editor
+.vscode/
+
+# Logs y temporales
+*.log
+_*.js
+*.bak
+.DS_Store
